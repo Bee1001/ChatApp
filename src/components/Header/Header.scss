@@ -1,0 +1,102 @@
+@import '../../App.scss';
+
+.header {
+    margin: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+        display: flex;
+        align-items: center;
+        &-image {
+            width: 50px;
+            height: 50px;
+        }
+        &-title {
+            margin: 0 15px;
+            color: #ECBEFD;
+        }
+    }
+    &-action {
+        display: flex;
+        &-button {
+            position: relative;
+            margin-left: 10px;
+            button {
+                width: 38px;
+                height: 38px;
+                line-height: 41px;
+                border-radius: 50%;
+                outline: none;
+                border: none;
+                background: $light-purple;
+                color: white;
+                font-size: 1.2em;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.popup-more {
+    position: absolute;
+    width: 230px;
+    height: 180px;
+    border-radius: 8px;
+    top: 32px;
+    z-index: 99;
+    list-style: none;
+    padding: 10px 0;
+    font-size: 1em;
+    background: white;
+    box-shadow: 0 12px 28px 0 $grey,0 2px 4px 0 $primary-grey,inset 0 0 0 1px $grey;
+    &-item {
+        padding: 10px;
+        margin: 0 10px;
+        color: $dark;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background: $grey;
+        }
+        span {
+            margin: 0 10px;
+        }
+    }
+}
+
+.notify-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.notify-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.notify-username {
+    margin: 10px 0;
+}
+.notify-button {
+    margin: 3px 0;
+}
+.notify-content {
+    margin: 0 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.btn-agree, .btn-remove {
+    padding: 10px 15px;
+    background: cornflowerblue;
+    outline: none;
+    font-size: 1em;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+.btn-remove {
+    background: $primary-grey;
+}

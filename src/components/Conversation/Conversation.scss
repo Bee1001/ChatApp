@@ -1,0 +1,109 @@
+@import '../../App.scss';
+
+.conversation {
+    width: 70rem;
+    font-family: 'Poppins', sans-serif;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px $grey;
+        padding: 20px;
+        &-left {
+            display: flex;
+            align-items: center;
+            span {
+                padding: 0 12px;
+            }
+        }
+        &-right {
+            span {
+                padding: 0 10px;
+                font-size: 1.3em;
+                cursor: pointer;
+            }
+        }
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            span {
+                &:last-child {
+                    font-size: 0.9em;
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+    &-messages {
+        display: flex;
+        flex-direction: column;
+        height: 755px;
+        overflow: auto;
+        padding: 10px;
+        &::-webkit-scrollbar-track {
+            background: $grey;
+        }
+        &::-webkit-scrollbar {
+            width: 3px;
+            padding: 0;
+            margin: 0;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: $light-purple;
+        }
+    }
+    &-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: solid 2px $grey;
+        padding: 10px 20px;
+        height: 75px;
+        &-messages {
+            position: relative;
+            width: 80%;
+            input {
+                width: 100%;
+                padding: 10px 15px;
+                font-size: 1em;
+                outline: none;
+                border-radius: 50px;
+                border: none;
+                background: $grey;
+                color: $dark-grey;
+            }
+        }
+    }
+    &-button {
+        font-size: 1.3em;
+        position: relative;
+        span {
+            padding: 0 10px;
+            cursor: pointer;
+        }
+    }
+    &-about {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+}
+.button-send {
+    position: absolute;
+    border-radius: 5px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.button-emoji {
+    cursor: pointer;
+}
+#message-input {
+    font-family: 'Poppins', sans-serif;
+}

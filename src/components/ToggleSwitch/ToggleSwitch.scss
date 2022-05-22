@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    input[type="checkbox"] {
+        display: none;
+        &:checked {
+            + {
+                .switch {
+                    &::before {
+                        transform: translateX(25px);
+                        background: white;
+                        transition: transform 0.3 ease;
+                    }
+                    background: $primary-purple;
+                }
+            }
+        }
+    }
+    .switch {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primary-grey;
+        border-radius: 25px;
+        transition: background-color 0.2 ease;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 2px;
+            top: 2px;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background: white;
+            transition: transform 0.3 ease;
+        }
+    }
+}

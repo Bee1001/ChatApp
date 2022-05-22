@@ -1,0 +1,52 @@
+@import '../../App.scss';
+
+.menu-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px 8px;
+    width: 25em;
+    border: solid 2px $grey;
+    border-radius: 30px 30px 0 0;
+    background: white;
+    z-index: 99;
+    &-container {
+        width: 25rem;
+        height: 756px;
+        overflow: auto;
+        transition: all 1s ease-in;
+        &::-webkit-scrollbar-track {
+            background: $grey;
+        }
+        &::-webkit-scrollbar {
+            width: 3px;
+            padding: 0;
+            margin: 0;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: $light-purple;
+        }
+    }
+    &-item {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    &-icon {
+        color: $light-purple;
+        font-size: 2em;
+    }
+    &-block {
+        margin: 15px;
+        &-content {
+            display: none;
+        }
+    }
+}
+.menu-bar-icon.active {
+    color: $primary-purple;
+}
+.menu-bar-block-content.active {
+    display: block;
+}

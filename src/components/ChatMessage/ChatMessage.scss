@@ -1,0 +1,95 @@
+@import '../../App.scss';
+
+.message-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 5px;
+    &-text {
+        padding: 10px 15px;
+        border-radius: 50px;
+        color: white;
+        word-wrap: break-word;
+        max-width: 50%;
+        line-height: 26px;
+        height: max-content;
+    }
+    &-button {
+        margin: 12px 0;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+    }
+    button {
+        padding: 5px;
+        background: none;
+        font-size: 1.1em;
+        border: none;
+        color: #CCCCCC;
+        cursor: pointer;
+    }
+    &:hover &-button {
+        opacity: 1;
+    }
+    img {
+        width: 200px;
+        height: 350px;
+    }
+}
+.message-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 10px;
+    &-text {
+        padding: 10px 15px;
+        border-radius: 50px;
+        color: white;
+        word-wrap: break-word;
+        max-width: 50%;
+        line-height: 26px;
+        height: max-content;
+    }
+    &-button {
+        margin: 12px 0;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+    }
+    button {
+        padding: 5px;
+        background: none;
+        font-size: 1.1em;
+        border: none;
+        color: #CCCCCC;
+        cursor: pointer;
+    }
+    &:hover &-button {
+        opacity: 1;
+    }
+    img {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+.message-text-length {
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: white;
+    word-wrap: break-word;
+    max-width: 50%;
+    line-height: 1.5;
+    height: max-content;
+    margin-bottom: 10px;
+}
+.message-center {
+    text-align: center;
+    color: $dark-grey;
+    font-size: 0.9em;
+    margin: 10px 0;
+    &-text {
+        display: inline-flex;
+        align-items: center;
+    }
+}

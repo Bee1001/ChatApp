@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.search {
+    margin: 17px 0;
+    &-input {
+        position: relative;
+        input {
+            padding: 12px 35px;
+            font-size: 1em;
+            width: -webkit-fill-available;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            background: $grey;
+        }
+        &-icon {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            font-size: 1.1em;
+            color: $dark-grey;
+        }
+    }
+}
+::-webkit-input-placeholder { 
+    color: $dark-grey;
+    font-size: 0.95em;
+}  
+:-ms-input-placeholder {
+    color: $dark-grey;
+    font-size: 0.95em;
+}
+::placeholder {
+    color: $dark-grey;
+    font-size: 0.95em;
+}

@@ -1,0 +1,8 @@
+@import '../../App.scss';
+
+.sidebar {
+    position: relative;
+    width: 25rem;
+    height: 100%;
+    border-right: solid 1px $primary-grey;
+}

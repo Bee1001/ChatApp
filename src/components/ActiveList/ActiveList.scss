@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.active-list {
+    margin: 20px 0px;
+    &-wrapper {
+        display: flex;
+    }
+    &-block {
+        position: relative;
+        text-align: center;
+        margin-right: 18px;
+        cursor: pointer;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            border: solid 3px white;
+            border-radius: 50%;
+            background: lightgreen;
+            top: 37%;
+            right: 0;
+        }
+        img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+        }
+        span {
+            display: block;
+            font-size: 0.95em;
+            color: $dark;
+        }
+    }
+}

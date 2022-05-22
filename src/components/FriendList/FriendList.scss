@@ -1,0 +1,52 @@
+@import '../../App.scss';
+
+.friendlist {
+    font-family: 'Poppins', sans-serif;
+    &-title {
+        margin: 10px;
+    }
+    &-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 20px 10px;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+        span {
+            margin: 0 12px;
+            flex-grow: 2;
+        }
+        // &:hover .btn-more-friend {
+        //     opacity: 1;
+        // }
+    }
+}
+.btn-more-friend {
+    position: absolute;
+    background: none;
+    right: 0;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px $primary-grey;
+    border: solid 1px $primary-grey;
+    // opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: white;
+    width: 40px;
+    height: 40px;
+    line-height: 41px;
+}
+.popover-content {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.popover-content a {
+    color: #333;
+    text-decoration: none;
+}

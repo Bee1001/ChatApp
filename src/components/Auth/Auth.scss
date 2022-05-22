@@ -1,0 +1,189 @@
+@import '../../App.scss';
+
+.auth-container {
+    width: 100%;
+}
+.auth-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    text-align: center;
+    width: 800px;
+    height: 600px;
+    img {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+}
+.form-container {
+    padding: 0 50px;
+}
+.form-wrapper,
+.form-signup-wrapper {
+    padding: 100px 30px;
+    border-radius: 5px;
+    border: solid 1px $grey;
+    box-shadow: 0 5px 15px $primary-grey;
+}
+.form-signup-wrapper {
+    padding: 60px 30px;
+}
+.form-title {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: $primary-purple;
+}
+.auth-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    label {
+        margin: 5px 0;
+        font-size: 1em;
+        font-family: 'Poppins', sans-serif;
+        color: $primary-purple;
+        font-weight: 600;
+    }
+    input {
+        padding: 12px 10px;
+        border: solid 1px $primary-grey;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1em;
+        font-family: 'Poppins', sans-serif;
+        color: $dark-grey;
+        width: 450px;
+        box-shadow: 0 5px 10px $grey;
+        transition: all 0.3s ease;
+    }
+    &:focus {
+        border: solid 2px $primary-purple;
+        transition: all 0.3s ease;
+    }
+}
+.btn-submit-form {
+    padding: 20px 0;
+    button {
+        width: 100%;
+        height: 40px;
+        font-size: 1.2em;
+        font-family: 'Poppins', sans-serif;
+        background: $primary-purple;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 5px 15px $primary-grey;
+        cursor: pointer;
+        font-weight: bold;
+        outline: none;
+    }
+}
+.auth-status {
+    padding: 5px;
+    text-align: center;
+    font-size: 1em;
+    color: $dark;
+    font-family: 'Poppins', sans-serif;
+    a {
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        color: $primary-purple;
+    }
+}
+.google-icon {
+    line-height: 35px;
+    font-size: 2em;
+}
+.icon-error {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    font-size: 1.2em;
+    color: #f53649;
+    display: none;
+}
+.auth-input.error .icon-error {
+    display: block;
+}
+.auth-input.error input {
+    border: solid 1px #f53649;
+    color: #f53649;
+}
+.auth-input.error input:focus {
+    border: solid 2px $primary-purple;
+    color: $dark-grey;
+}
+.show-error-wrapper {
+    border-left: solid 3px #f53649;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #f53649;
+    background: #faf1f1;
+}
+.icon-warning {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+.signin-with-gg-container {
+    margin: 20px 0;
+    padding: 7px ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: cornflowerblue;
+    border-radius: 5px;
+}
+.signin-with-gg-text {
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    flex-grow: 2;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 1.1em;
+}
+.signin-with-gg-icon {
+    padding: 3.5px;
+    background: #fff;
+    border-radius: 5px;
+}
+@media screen and (max-width: 670px) {
+    .auth-container {
+        justify-content: center;
+    }
+    .auth-wrapper {
+        display: block;
+        overflow: hidden;
+    }
+    .image-container {
+        display: none;
+    }
+    .auth-input input {
+        width: auto;
+    }
+    .form-container {
+        padding: 0 10px;
+        margin: 50px 0;
+    }
+    .form-wrapper {
+        padding: 100px 15px;
+    }
+    .form-wrapper,
+    .form-signup-wrapper {
+        border: none;
+        box-shadow: none;
+    }
+}

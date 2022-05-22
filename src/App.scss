@@ -1,0 +1,18 @@
+$primary-purple: #e6adfa;
+$light-purple: #f3dbfce8;
+$primary-grey: #E9EAEC;
+$grey: #F5F7FB;
+$dark-grey: #B6BAC3;
+$dark: #4a525f;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+.App {
+    display: flex;
+    // justify-content: center;
+    height: 100vh;
+}
